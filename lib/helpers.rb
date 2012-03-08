@@ -3,7 +3,7 @@ def setup_shared_folders
 end
 
 def template(*args)
-  expand_path_for('templates', args)
+  expand_path_for(['templates', args])
 end
 
 def expand_path_for(path)

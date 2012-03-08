@@ -11,11 +11,10 @@ namespace :db do
   
   desc "Creates a database.yml file in shared/config. It will prompt for the database password."
   task :configure do
-    require 'erb'
-    run "umask 02 && mkdir -p #{shared_path}/config"
-    template = File.read(File.join(File.dirname(__FILE__), "..", "templates", "config", "database.yml"))
-    result = ERB.new(template).result(binding)
-    put result, "#{shared_path}/config/database.yml", :mode => 0644
+    setup_shared_folders
+    file = 'config/database.yml'
+    result = parse_template(template(file))
+    put result, "#{shared_path}/#{file}", :mode => 0644
   end
   
   namespace :data do
