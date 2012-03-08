@@ -1,4 +1,4 @@
-require "capistrano-recipies/version"
+require "capistrano-recipes/version"
 
 require 'capistrano'
 require 'capistrano/cli'

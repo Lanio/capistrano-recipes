@@ -1,6 +1,6 @@
-# Capistrano Recipies
+# Capistrano Recipes
 
-Collection of Capistrano Recipies
+Collection of Capistrano Recipes
 
 # Install
 

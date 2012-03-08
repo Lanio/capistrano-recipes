@@ -1,17 +1,17 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "capistrano-recipies/version"
+require "capistrano-recipes/version"
 
 Gem::Specification.new do |s|
-  s.name        = "capistrano-recipies"
-  s.version     = Capistrano::Recipies::VERSION
+  s.name        = "capistrano-recipes"
+  s.version     = Capistrano::Recipes::VERSION
   s.authors     = ["John Hwang"]
   s.email       = ["johnyhwang@gmail.com"]
   s.homepage    = ""
-  s.summary     = %q{Collection of Capistrano Recipies}
-  s.description = %q{Collection of Capistrano Recipies}
+  s.summary     = %q{Collection of Capistrano Recipes}
+  s.description = %q{Collection of Capistrano Recipes}
 
-  s.rubyforge_project = "capistrano-recipies"
+  s.rubyforge_project = "lanio-capistrano-recipes"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")

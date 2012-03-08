@@ -1,5 +1,5 @@
 module Capistrano
-  module Recipies
+  module Recipes
     VERSION = "0.0.1"
   end
 end
